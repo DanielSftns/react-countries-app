@@ -9,8 +9,8 @@ const HomePage = () => {
     
     const handleSelectRegion = (e)=> {
         const region = e.target.value
-        setRegion(region)
         setSearch('')
+        setRegion(region)
     }
 
     const hanldeSearch = (e)=>{

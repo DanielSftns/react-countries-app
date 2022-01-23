@@ -28,7 +28,12 @@ const CountriesList = ({region, search}) => {
     }, [region])
 
     useEffect(()=>{
-        if(!search) return
+        if(!search){
+            if(allCountries){
+                setCountries(allCountries)
+            }
+            return
+        }
 
         const filtrado = allCountries.filter(country => {
             const name = country.name.common || country.name
@@ -38,7 +43,7 @@ const CountriesList = ({region, search}) => {
 
         setCountries(filtrado)
 
-    }, [search])
+    }, [search, allCountries])
 
     return (
         <div className="container">
