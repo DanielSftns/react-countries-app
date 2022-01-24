@@ -3,7 +3,7 @@ import { Icon } from '@iconify/react';
 
 const Navbar = () => {
     return (
-        <nav className="navbar navbar-light bg-light mb-5">
+        <nav className="navbar navbar-light bg-light mb-5 p-3">
             <div className="container">
                 <span className="navbar-brand mb-0 h1">MyApp</span>
                 {/* <Icon icon="bi:moon" />
