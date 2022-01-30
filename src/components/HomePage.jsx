@@ -38,7 +38,7 @@ const HomePage = () => {
                     </div>
 
                     <div className="col-6 col-md-2 offset-md-6">
-                        <select onChange={handleSelectRegion} className="form-select" >
+                        <select onChange={handleSelectRegion} className="form-select p-3" >
                             <option value=''>Filter by Region</option>
                             <option value="africa">Africa</option>
                             <option value="americas">America</option>
